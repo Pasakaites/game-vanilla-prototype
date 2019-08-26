@@ -1,0 +1,395 @@
+#arena {
+    text-align: center;
+    margin-top: 240px;
+}
+
+#end {
+    text-align: center;
+    display: none;
+}
+
+#ninjaOneWrap {
+    display: inline-block;
+    width: 40%;
+}
+
+.ninjaOne {
+    text-align: center;
+    display: inline-block;
+    padding-left: 100px;
+}
+
+#oneHP {
+    font-size: 24px;
+    color: green;
+    display: none;
+}
+
+#weaponOne {
+    display: inline-block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+}
+
+#fistOne {
+    width: auto;
+    height: 100px;
+    display: none;
+}
+
+#daggerOne {
+    width: auto;
+    height: 100px;
+    display: none;
+}
+
+#swordOne {
+    width: auto;
+    height: 100px;
+    display: none;
+}
+
+#flailOne {
+    width: auto;
+    height: 100px;
+    display: none;
+}
+
+#circle {
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    background: red;
+    border-radius: 50%
+}
+
+#triangle-down {
+    display: inline-block;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid red;
+    margin-top: 8px;
+}
+
+#left-hand {
+    display: inline-block;
+    margin: 0 auto;
+    width: 12px;
+    height: 100px;
+    background-color: red;
+}
+
+#right-hand {
+    display: inline-block;
+    margin: 0 auto;
+    width: 12px;
+    height: 100px;
+    background-color: red;
+}
+
+#legs {
+    margin: 0 auto;
+    height: 60px;
+    width: 30px;
+    border-left: 5px solid red;
+    border-right: 5px solid red;
+}
+
+#ninjaTwoWrap {
+    display: inline-block;
+    width: 40%;
+}
+
+#twoHP {
+    font-size: 24px;
+    color: green;
+    display: none;
+}
+
+.ninjaTwo {
+    text-align: center;
+    display: inline-block;
+    padding-right: 100px;
+}
+
+#weaponTwo {
+    display: inline-block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+}
+
+#fistTwo {
+    width: auto;
+    height: 100px;
+    display: none;
+}
+
+#daggerTwo {
+    width: auto;
+    height: 100px;
+    display: none;
+}
+
+#swordTwo {
+    width: auto;
+    height: 100px;
+    display: none;
+}
+
+#flailTwo {
+    width: auto;
+    height: 100px;
+    display: none;
+}
+
+#circle2 {
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    background: black;
+    border-radius: 50%
+}
+
+#triangle-down2 {
+    display: inline-block;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid black;
+    margin-top: 8px;
+}
+
+#left-hand2 {
+    display: inline-block;
+    margin: 0 auto;
+    width: 12px;
+    height: 100px;
+    background-color: black;
+}
+
+#right-hand2 {
+    display: inline-block;
+    margin: 0 auto;
+    width: 12px;
+    height: 100px;
+    background-color: black;
+}
+
+#legs2 {
+    margin: 0 auto;
+    height: 60px;
+    width: 30px;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+}
+
+#selectWrapOne {
+    display: none;
+}
+
+#selectWrapTwo {
+    display: none;
+}
+
+#weaponWrapOne {
+    display: inline-block;
+    width: 120px;
+}
+
+#armorWrapOne {
+    display: inline-block;
+    width: 120px;
+}
+.attackWrapOne {
+    display: inline-block;
+    width: 120px;
+}
+
+.defenceWrapOne {
+    display: inline-block;
+    width: 120px;
+}
+
+#weaponWrapTwo {
+    display: inline-block;
+    width: 120px;
+}
+
+#armorWrapTwo {
+    display: inline-block;
+    width: 120px;
+}
+
+.attackWrapTwo {
+    display: inline-block;
+    width: 120px;
+}
+
+.defenceWrapTwo {
+    display: inline-block;
+    width: 120px;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* The container */
+.containerOne {
+    display: block;
+    position: relative;
+    /* padding-left: 35px; */
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container .checkmark:after {
+    top: 7px;
+    left: 7px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+  }
+
+#fightButtonWrap {
+    margin-top: 40px;
+    display: none;
+}  
+
+.fightButton {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: red; 
+    color: black; 
+    border: 2px solid black;
+}
+
+.fightButton:hover {
+    background-color: black;
+    color: red;
+    border: 2px solid red;
+}
+
+#startButtonWrap {
+    margin-top: 40px;
+    display: block;
+}  
+
+.startButton {
+    width: 220px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: red; 
+    color: black; 
+    border: 2px solid black;
+}
+
+.startButton:hover {
+    background-color: black;
+    color: red;
+    border: 2px solid red;
+}
+
+#submitButtonWrapOne {
+    margin-top: 40px;
+    display: none;
+}  
+
+#submitButtonWrapTwo {
+    margin-top: 40px;
+    display: none;
+}  
+
+#fightGoesOnWrap {
+    margin-top: 40px;
+    display: none;
+}  
+
+.submitButton {
+    width: 260px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: red; 
+    color: black; 
+    border: 2px solid black;
+}
+
+.submitButton:hover {
+    background-color: black;
+    color: red;
+    border: 2px solid red;
+}
+
+#newGameWrap {
+    margin-top: 40px;
+    display: none;
+}  
+

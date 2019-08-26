@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="./style.css">
+<script src="./script.js"></script>
+<title>Page Title</title>
+</head>
+<body>
+
+<div id="arena">
+    <div id="end"><h1 id="lost">NINJA ONE LOST! ALL HAIL NINJA TWO!</h1></div>
+    <div id="ninjaOneWrap">
+        <p id="oneHP">HP: 100</p>
+        <div class="ninjaOne">
+            <div id="circle"></div>
+            <div id="torso">
+                <div id="left-hand"></div>
+                <div id="triangle-down"></div>
+                <div id="right-hand"></div>
+            </div>
+            <div id="legs"></div>
+        </div>
+        <div id="weaponOne">
+            <img id="fistOne" src="./pictures/brass-knuckles.svg">
+            <img id="daggerOne" src="./pictures/dagger.svg">
+            <img id="swordOne" src="./pictures/sword.svg">
+            <img id="flailOne" src="./pictures/flail.svg">
+        </div>
+        <div id="selectWrapOne">
+            <div id="weaponWrapOne">
+                <p>Choose your Tool of Murder</p>
+                <label class="container">Fists
+                <input type="radio" name="radio7" id="fistOneWeapon" onclick="ninjaOneWeaponChoice()">
+                <span class="checkmark"></span>
+                </label>
+                <label class="container">Dagger
+                <input type="radio" name="radio7" id="daggerOneWeapon" onclick="ninjaOneWeaponChoice()">
+                <span class="checkmark"></span>
+                </label>
+                <label class="container">Sword
+                <input type="radio" name="radio7" id="swordOneWeapon" onclick="ninjaOneWeaponChoice()">
+                <span class="checkmark"></span>
+                </label>
+                <label class="container">Flail
+                <input type="radio" name="radio7" id="flailOneWeapon" onclick="ninjaOneWeaponChoice()">
+                <span class="checkmark"></span>
+                </label>
+            </div>
+            <div id="armorWrapOne">
+                <p>Choose your Armor wisely</p>
+                <label class="container">Head
+                <input type="radio" name="radio5" id="headOneArmor" onclick="ninjaOneArmor()">
+                <span class="checkmark"></span>
+                </label>
+                <label class="container">Torso
+                <input type="radio" name="radio5" id="torsoOneArmor" onclick="ninjaOneArmor()">
+                <span class="checkmark"></span>
+                </label>
+                <label class="container">Arms
+                <input type="radio" name="radio5" id="armsOneArmor" onclick="ninjaOneArmor()">
+                <span class="checkmark"></span>
+                </label>
+                <label class="container">Legs
+                <input type="radio" name="radio5" id="legsOneArmor" onclick="ninjaOneArmor()">
+                <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="attackWrapOne">
+                <p>Choose what to ATTACK</p>
+                <label class="container">Head
+                <input type="radio" name="radio1" id="headOneA" onclick="ninjaOneAttack()">
+                <span class="checkmark"></span>
+                </label>
+                <label class="container">Torso
+                <input type="radio" name="radio1" id="torsoOneA" onclick="ninjaOneAttack()">
+                <span class="checkmark"></span>
+                </label>
+                <label class="container">Arms
+                <input type="radio" name="radio1" id="armsOneA" onclick="ninjaOneAttack()">
+                <span class="checkmark"></span>
+                </label>
+                <label class="container">Legs
+                <input type="radio" name="radio1" id="legsOneA" onclick="ninjaOneAttack()">
+                <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="defenceWrapOne">
+                <p>Choose what to DEFEND</p>
+                <label class="container">Head
+                <input type="radio" name="radio2" id="headOneD" onclick="ninjaOneDefend(1)">
+                <span class="checkmark"></span>
+                </label>
+                <label class="container">Torso
+                <input type="radio" name="radio2" id="torsoOneD" onclick="ninjaOneDefend(2)">
+                <span class="checkmark"></span>
+                </label>
+                <label class="container">Arms
+                <input type="radio" name="radio2" id="armsOneD" onclick="ninjaOneDefend(3)">
+                <span class="checkmark"></span>
+                </label>
+                <label class="container">Legs
+                <input type="radio" name="radio2" id="legsOneD" onclick="ninjaOneDefend(4)">
+                <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div id="ninjaTwoWrap">
+        <p id="twoHP">HP: 100</p>
+        <div id="weaponTwo">
+            <img id="fistTwo" src="./pictures/brass-knuckles.svg">
+            <img id="daggerTwo" src="./pictures/dagger.svg">
+            <img id="swordTwo" src="./pictures/sword.svg">
+            <img id="flailTwo" src="./pictures/flail.svg">
+        </div>
+        <div class="ninjaTwo">
+            <div id="circle2"></div>
+            <div id="torso2">
+                <div id="left-hand2"></div>
+                <div id="triangle-down2"></div>
+                <div id="right-hand2"></div>
+            </div>
+            <div id="legs2"></div>
+        </div>
+        <div id="selectWrapTwo">
+            <div id="weaponWrapTwo">
+                <p>Choose your Tool of Murder</p>
+                <label class="container">Fists
+                <input type="radio" name="radio8" id="fistTwoWeapon" onclick="ninjaTwoWeaponChoice()">
+                <span class="checkmark"></span>
+                </label>
+                <label class="container">Dagger
+                <input type="radio" name="radio8" id="daggerTwoWeapon" onclick="ninjaTwoWeaponChoice()">
+                <span class="checkmark"></span>
+                </label>
+                <label class="container">Sword
+                <input type="radio" name="radio8" id="swordTwoWeapon" onclick="ninjaTwoWeaponChoice()">
+                <span class="checkmark"></span>
+                </label>
+                <label class="container">Flail
+                <input type="radio" name="radio8" id="flailTwoWeapon" onclick="ninjaTwoWeaponChoice()">
+                <span class="checkmark"></span>
+                </label>
+            </div>
+            <div id="armorWrapTwo">
+                <p>Choose your Armor wisely</p>
+                <label class="container">Head
+                <input type="radio" name="radio6" id="headTwoArmor" onclick="ninjaTwoArmor()">
+                <span class="checkmark"></span>
+                </label>
+                <label class="container">Torso
+                <input type="radio" name="radio6" id="torsoTwoArmor" onclick="ninjaTwoArmor()">
+                <span class="checkmark"></span>
+                </label>
+                <label class="container">Arms
+                <input type="radio" name="radio6" id="armsTwoArmor" onclick="ninjaTwoArmor()">
+                <span class="checkmark"></span>
+                </label>
+                <label class="container">Legs
+                <input type="radio" name="radio6" id="legsTwoArmor" onclick="ninjaTwoArmor()">
+                <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="attackWrapTwo">
+                <p>Choose what to ATTACK</p>
+                <label class="container">Head
+                <input type="radio" name="radio3" id="headTwoA" onclick="ninjaTwoAttack()">
+                <span class="checkmark"></span>
+                </label>
+                <label class="container">Torso
+                <input type="radio" name="radio3" id="torsoTwoA" onclick="ninjaTwoAttack()">
+                <span class="checkmark"></span>
+                </label>
+                <label class="container">Arms
+                <input type="radio" name="radio3" id="armsTwoA" onclick="ninjaTwoAttack()">
+                <span class="checkmark"></span>
+                </label>
+                <label class="container">Legs
+                <input type="radio" name="radio3" id="legsTwoA" onclick="ninjaTwoAttack()">
+                <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="defenceWrapTwo">
+                <p>Choose what to DEFEND</p>
+                <label class="container">Head
+                <input type="radio" name="radio4" id="headTwoD" onclick="ninjaTwoDefend()">
+                <span class="checkmark"></span>
+                </label>
+                <label class="container">Torso
+                <input type="radio" name="radio4" id="torsoTwoD" onclick="ninjaTwoDefend()">
+                <span class="checkmark"></span>
+                </label>
+                <label class="container">Arms
+                <input type="radio" name="radio4" id="armsTwoD" onclick="ninjaTwoDefend()">
+                <span class="checkmark"></span>
+                </label>
+                <label class="container">Legs
+                <input type="radio" name="radio4" id="legsTwoD" onclick="ninjaTwoDefend()">
+                <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div id="fightButtonWrap">
+        <button class="button fightButton" onclick="countTurn()">FIGHT!</button>
+    </div>
+    <div id="startButtonWrap">
+        <button class="button startButton" onclick="startTheGame()">START THE GAME!</button>
+    </div>
+    <div id="submitButtonWrapOne">
+        <button class="button submitButton" onclick="submitOne()">SUBMIT YOUR KUNG FU!</button>
+    </div>
+    <div id="submitButtonWrapTwo">
+        <button class="button submitButton" onclick="submitTwo()">SUBMIT YOUR KUNG FU!</button>
+    </div>
+    <div id="fightGoesOnWrap">
+        <button class="button submitButton" onclick="fightGoesOn()">FIGHT GOES ON!</button>
+    </div>
+    <div id="newGameWrap">
+        <button class="button fightButton" onclick="window.location.reload()">NEW GAME</button>
+    </div>
+</div>
+
+
+</body>
+</html>
